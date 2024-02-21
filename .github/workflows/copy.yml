@@ -98,5 +98,5 @@ jobs:
             skopeo --insecure-policy copy --all --retry-times 5 --dest-precompute-digests --dest-creds $DOCKER_USERNAME:$DOCKER_PASSWORD docker://"${scr}":"${tag}" docker://"${dest}":"${tag}"
           done
 
-          # skopeo --insecure-policy copy --all --retry-times 5 --dest-precompute-digests --dest-creds $DOCKER_USERNAME:$DOCKER_PASSWORD docker://gcr.io/google.com/cloudsdktool/cloud-sdk:302.0.0-slim docker://docker.io/dyrnq/cloud-sdk:302.0.0-slim
-          # skopeo --insecure-policy copy --all --retry-times 5 --dest-precompute-digests --dest-creds $DOCKER_USERNAME:$DOCKER_PASSWORD docker://gcr.io/distroless/base:debug docker://docker.io/dyrnq/distroless-base:debug
+          # skopeo --insecure-policy copy --all --retry-times 5 --dest-precompute-digests --dest-creds $DOCKER_USERNAME:$DOCKER_PASSWORD docker://gcr.io/google.com/cloudsdktool/cloud-sdk:302.0.0-slim docker://docker.io/$DOCKER_USERNAME/cloud-sdk:302.0.0-slim
+          # skopeo --insecure-policy copy --all --retry-times 5 --dest-precompute-digests --dest-creds $DOCKER_USERNAME:$DOCKER_PASSWORD docker://gcr.io/distroless/base:debug docker://docker.io/$DOCKER_USERNAME/distroless-base:debug
