@@ -47,4 +47,4 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: |
-          skopeo --insecure-policy sync --keep-going --src yaml --all --dest-creds $DOCKER_USERNAME:$DOCKER_PASSWORD --dest docker sync.yaml docker.io/dyrnq
+          skopeo --insecure-policy sync --keep-going --src yaml --all --dest-creds $DOCKER_USERNAME:$DOCKER_PASSWORD --dest docker sync.yaml docker.io/$DOCKER_USERNAME
