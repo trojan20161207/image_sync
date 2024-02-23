@@ -29,6 +29,8 @@ jobs:
         - "gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop,docker.io/$DOCKER_USERNAME/tektoncd-pipeline-cmd-nop"
         - "gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/imagedigestexporter,docker.io/$DOCKER_USERNAME/tektoncd-pipeline-cmd-imagedigestexporter"
         - "gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/pullrequest-init,docker.io/$DOCKER_USERNAME/tektoncd-pipeline-cmd-pullrequest-init"
+        - "gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/events,docker.io/$DOCKER_USERNAME/tektoncd-pipeline-cmd-events"
+        - "gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/resolvers,docker.io/$DOCKER_USERNAME/tektoncd-pipeline-cmd-resolvers"
         - "gcr.io/google.com/cloudsdktool/cloud-sdk,docker.io/$DOCKER_USERNAME/cloud-sdk"
         # - "registry.k8s.io/sig-storage/nfs-subdir-external-provisioner,docker.io/$DOCKER_USERNAME/nfs-subdir-external-provisioner"
         # - "registry.k8s.io/sig-storage/local-volume-provisioner,docker.io/$DOCKER_USERNAME/local-volume-provisioner"
