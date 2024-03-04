@@ -45,4 +45,5 @@ registry.k8s.io:
     kube-controller-manager: ^(latest|v.*)$
     kube-scheduler: ^(latest|v.*)$
     kube-proxy: ^(latest|v.*)$
+    external-dns/external-dns: ^(latest|v.*)$
     dns/k8s-dns-node-cache: ^(latest|v.*|\d+\..*)$
