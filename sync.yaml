@@ -25,6 +25,7 @@ registry.k8s.io:
     ingress-nginx/controller: ^(latest|v.*)$
     ingress-nginx/kube-webhook-certgen: ^(latest|v.*)$
     kube-state-metrics/kube-state-metrics: ^(latest|v.*)$
+    sig-storage/nfs-provisioner: ^(latest|v.*)$
     sig-storage/nfs-subdir-external-provisioner: ^(latest|v.*)$
     sig-storage/local-volume-provisioner: ^(latest|v.*)$
     sig-storage/snapshot-controller: ^(latest|v.*)$
